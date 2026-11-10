@@ -6,7 +6,7 @@ R=Path(__file__).resolve().parents[1]
 missing=[];secrets=[];forbidden=[]
 secret_patterns=[r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',r'gh[pousr]_[A-Za-z0-9]{30,}',r'github_pat_[A-Za-z0-9_]{30,}',r'AIza[0-9A-Za-z_-]{30,}',r'sk-(?:proj-)?[A-Za-z0-9_-]{35,}']
 ignored={'.git','__pycache__','local','node_modules','.venv','venv'}
-files=[p for p in R.rglob('*') if p.is_file() and not ignored.intersection(p.relative_to(R).parts)]
+files=sorted(p for p in R.rglob('*') if p.is_file() and not ignored.intersection(p.relative_to(R).parts))
 for p in files:
     if any(x in p.name.lower() for x in ['passport','паспорт']) or p.name.startswith('.env'):forbidden.append(str(p.relative_to(R)))
     if p.suffix.lower() not in ['.md','.txt','.py','.js','.cjs','.json','.html','.yml','.yaml','.csv']:continue
@@ -26,7 +26,7 @@ hashes=json.loads((R/'sources/manifest.json').read_text(encoding='utf-8'))
 assert all(hashlib.sha256((R/'sources'/item['file']).read_bytes()).hexdigest()==item['sha256'] for item in hashes)
 ns={'a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
 decks={}
-for p in (R/'presentation').glob('*.pptx'):
+for p in sorted((R/'presentation').glob('*.pptx')):
     with zipfile.ZipFile(p) as z:
         assert z.testzip() is None
         slide_names=[n for n in z.namelist() if re.fullmatch(r'ppt/slides/slide\d+\.xml',n)]
