@@ -33,8 +33,9 @@ for p in sorted((R/'presentation').glob('*.pptx')):
         text=' '.join(t.text or '' for name in slide_names for t in ET.fromstring(z.read(name)).findall('.//a:t',ns))
         assert len(slide_names)==8 and '201,3' in text and '43,2' in text
         decks[p.name]=dict(slides=len(slide_names),charts=len([n for n in z.namelist() if re.fullmatch(r'ppt/charts/chart\d+\.xml',n)]))
-required=['README.md','demo/index.html','materials/HYPOTHESIS.md','materials/REPORT.md','materials/ECONOMICS.md','materials/ROADMAP.md','materials/requirements/CHECKLIST.md','materials/requirements/A3_OFFICIAL_SNAPSHOT.txt','model/data/scenarios.json','model/src/economy.js','ai/README.md','ai/RESEARCH_LOG.md','model/results/scenarios.json','model/results/port_scenarios.json']
+required=['README.md','demo/vanino-dashboard.html','materials/HYPOTHESIS.md','materials/REPORT.md','materials/ECONOMICS.md','materials/ROADMAP.md','materials/requirements/CHECKLIST.md','materials/requirements/A3_OFFICIAL_SNAPSHOT.txt','model/data/scenarios.json','model/src/economy.js','ai/README.md','ai/RESEARCH_LOG.md','model/results/scenarios.json','model/results/port_scenarios.json']
 assert all((R/p).exists() for p in required)
+assert sorted(p.name for p in (R/'demo').glob('*.html'))==['vanino-dashboard.html']
 report=dict(files=len(files),broken_local_links=missing,secret_pattern_matches=secrets,excluded_files_present=forbidden,source_hashes_ok=len(hashes),decks=decks)
 (R/'model/results/repository_checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 assert not missing,missing

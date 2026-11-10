@@ -25,4 +25,4 @@ jobs:
       - name: Проверить ссылки, источники и состав
         run: python3 model/scripts/check_repository.py
       - name: Убедиться в воспроизводимости опубликованных файлов
-        run: git diff --exit-code -- demo/index.html model/results/
+        run: git diff --exit-code -- demo/vanino-dashboard.html model/results/

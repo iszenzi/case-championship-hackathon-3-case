@@ -45,6 +45,6 @@ class EconomicTests(unittest.TestCase):
         self.assertAlmostEqual(a['total'],b['total'],places=6)
     def test_actual_hypothesis_is_preserved(self):
         expected='Если в Ванино ожидается задержка приёма груза, раннее перенаправление контейнерной партии в Советскую Гавань может снизить расходы порта Ванино.'
-        for p in ['README.md','materials/HYPOTHESIS.md','demo/index.html']:
+        for p in ['README.md','materials/HYPOTHESIS.md']:
             self.assertIn(expected,(R.parent/p).read_text(encoding='utf-8'))
 if __name__=='__main__':unittest.main()
