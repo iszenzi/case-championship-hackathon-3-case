@@ -13,6 +13,6 @@
 *.docx binary
 *.png binary
 # Preserve public source snapshots and original CSV byte-for-byte for SHA256 checks.
-sources/** -text
-sources/README.md text eol=lf
-archive/teammate/results/*.csv -text
+materials/sources/** -text
+materials/sources/README.md text eol=lf
+

@@ -3,12 +3,12 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE_PATH || 'playwright');
 const path=require('node:path'),fs=require('node:fs'),assert=require('node:assert');
 const {pathToFileURL}=require('node:url');
 (async()=>{
- const root=path.resolve(__dirname,'..');
+ const root=path.resolve(__dirname,'../..');
  const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL || 'msedge',headless:true});
  try {
   const page=await browser.newPage({viewport:{width:1440,height:1000}});
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(pathToFileURL(path.join(root,'app/index.html')).href);
+  await page.goto(pathToFileURL(path.join(root,'demo/index.html')).href);
   assert((await page.locator('#hypothesis').innerText()).includes('может снизить расходы порта Ванино'));
   for(const key of ['base','positive','stress','failure']){
    await page.locator(`[data-preset="${key}"]`).click();
@@ -29,7 +29,7 @@ const {pathToFileURL}=require('node:url');
   fs.mkdirSync(path.join(root,'local/browser'),{recursive:true});
   await page.screenshot({path:path.join(root,'local/browser/mobile.png')});
   assert.deepEqual(errors,[]);
-  fs.writeFileSync(path.join(root,'results/browser_checks.json'),JSON.stringify({browser:'Edge headless',viewports:['1440x1000','390x844'],pageErrors:errors,scenarios:4,settlementModes:2,invalidInput:true,mapAnimation:true,export:true,exactHypothesis:true,mobileNoOverflow:true},null,2)+'\n');
+  fs.writeFileSync(path.join(root,'model/results/browser_checks.json'),JSON.stringify({browser:'Edge headless',viewports:['1440x1000','390x844'],pageErrors:errors,scenarios:4,settlementModes:2,invalidInput:true,mapAnimation:true,export:true,exactHypothesis:true,mobileNoOverflow:true},null,2)+'\n');
   console.log('Browser checks passed');
  } finally {await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

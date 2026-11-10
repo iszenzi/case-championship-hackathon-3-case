@@ -1,0 +1,9 @@
+{
+  "checks": "255 independent Python/JS cases, conservation, transfer invariants, first-wagon timing, both settlement schemes",
+  "case_count": 255,
+  "independent_implementations": [
+    "Python",
+    "JavaScript"
+  ],
+  "passed": true
+}

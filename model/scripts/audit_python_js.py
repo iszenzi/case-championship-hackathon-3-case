@@ -47,5 +47,5 @@ assert abs(base['holdingSaving']-52985)<1e-6
 assert abs(base['raw'][1]+142336.6)<1e-6
 assert js[0]['economic'] is False and js[1]['economic'] is True and js[2]['economic'] is True and js[3]['economic'] is False and js[4]['economic'] is False
 result={'checks':'255 independent Python/JS cases, conservation, transfer invariants, first-wagon timing, both settlement schemes','scenarios':{k:{'inputs':p,'results':j} for (k,p),j in zip(named.items(),js)}}
-(O/'calculations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+(O/'verification.json').write_text(json.dumps({'checks':result['checks'],'case_count':len(cases),'independent_implementations':['Python','JavaScript'],'passed':True},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({k:dict(rzd=js[i]['final'][0],total=js[i]['total'],need=js[i]['need'],deficit=js[i]['deficit']) for i,k in enumerate(named)},ensure_ascii=False,indent=2))
