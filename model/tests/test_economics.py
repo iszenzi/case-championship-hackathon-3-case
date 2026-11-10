@@ -1,17 +1,16 @@
 """Behavioral checks: conservation, counterexamples, timing and transfer neutrality."""
 from pathlib import Path
-import importlib.util,json,subprocess,unittest
+import json,subprocess,unittest
 R=Path(__file__).resolve().parents[1]
-spec=importlib.util.spec_from_file_location('audit',R/'scripts/audit_python_js.py')
 # The full audit is executed by reproduce.py; tests inspect its independent outputs.
 class EconomicTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.cases=json.loads((R/'results/scenarios.json').read_text(encoding='utf-8'))
-        cls.port=json.loads((R/'results/independent_results.json').read_text(encoding='utf-8'))
+        cls.port=json.loads((R/'results/port_scenarios.json').read_text(encoding='utf-8'))
     def test_port_base_is_a_counterexample(self):
-        self.assertAlmostEqual(self.port['base']['completion']['benefit'],-142336.6,places=6)
-        self.assertAlmostEqual(self.port['14days']['completion']['benefit'],61523.4,places=6)
+        self.assertAlmostEqual(self.port['base']['results']['benefit'],-142336.6,places=6)
+        self.assertAlmostEqual(self.port['14days']['results']['benefit'],61523.4,places=6)
     def test_first_wagon_finishes_after_processing(self):
         r=self.cases['base']['results']
         self.assertAlmostEqual(r['release'][0],.525)
@@ -35,8 +34,8 @@ class EconomicTests(unittest.TestCase):
         self.assertFalse(self.cases['failure']['results']['economic'])
         self.assertAlmostEqual(self.cases['base']['results']['need'],201321.6,places=6)
     def test_private_rounding_matters(self):
-        proportional=self.port['private4000']['completion']['benefit']
-        started=self.port['started4000']['completion']['benefit']
+        proportional=self.port['private4000']['results']['benefit']
+        started=self.port['started4000']['results']['benefit']
         self.assertAlmostEqual(proportional,76663.4,places=6)
         self.assertAlmostEqual(started,17663.4,places=6)
         self.assertGreater(proportional,started)

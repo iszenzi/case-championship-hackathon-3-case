@@ -1,0 +1,127 @@
+{
+  "base": {
+    "inputs": {
+      "n": 20,
+      "wait": 4,
+      "private": 0,
+      "started": false,
+      "sea": 0
+    },
+    "results": {
+      "revenue": 589356.8,
+      "avoidable": 294678.4,
+      "alternative": 350000,
+      "storage": 20000,
+      "move": 120000,
+      "residualRzd": 11275,
+      "residualContract": 0.0,
+      "waiting": 64260.0,
+      "netTransfer": 206596.6,
+      "benefit": -142336.6,
+      "firstRelease": 0.525,
+      "lastRelease": 1.0,
+      "breakEvenAltPrice": 10383.17,
+      "breakEvenMove": -22336.6
+    }
+  },
+  "14days": {
+    "inputs": {
+      "n": 20,
+      "wait": 14,
+      "private": 0,
+      "started": false,
+      "sea": 0
+    },
+    "results": {
+      "revenue": 589356.8,
+      "avoidable": 294678.4,
+      "alternative": 350000,
+      "storage": 20000,
+      "move": 120000,
+      "residualRzd": 11275,
+      "residualContract": 0.0,
+      "waiting": 268120.0,
+      "netTransfer": 206596.6,
+      "benefit": 61523.4,
+      "firstRelease": 0.525,
+      "lastRelease": 1.0,
+      "breakEvenAltPrice": 20576.17,
+      "breakEvenMove": 181523.4
+    }
+  },
+  "private4000": {
+    "inputs": {
+      "n": 20,
+      "wait": 4,
+      "private": 4000,
+      "started": false,
+      "sea": 0
+    },
+    "results": {
+      "revenue": 589356.8,
+      "avoidable": 294678.4,
+      "alternative": 350000,
+      "storage": 20000,
+      "move": 120000,
+      "residualRzd": 11275,
+      "residualContract": 101000.0,
+      "waiting": 384260.0,
+      "netTransfer": 307596.6,
+      "benefit": 76663.4,
+      "firstRelease": 0.525,
+      "lastRelease": 1.0,
+      "breakEvenAltPrice": 21333.17,
+      "breakEvenMove": 196663.4
+    }
+  },
+  "started4000": {
+    "inputs": {
+      "n": 20,
+      "wait": 4,
+      "private": 4000,
+      "started": true,
+      "sea": 0
+    },
+    "results": {
+      "revenue": 589356.8,
+      "avoidable": 294678.4,
+      "alternative": 350000,
+      "storage": 20000,
+      "move": 120000,
+      "residualRzd": 11275,
+      "residualContract": 160000.0,
+      "waiting": 384260.0,
+      "netTransfer": 366596.6,
+      "benefit": 17663.4,
+      "firstRelease": 0.525,
+      "lastRelease": 1.0,
+      "breakEvenAltPrice": 18383.17,
+      "breakEvenMove": 137663.4
+    }
+  },
+  "private4000_sea500k": {
+    "inputs": {
+      "n": 20,
+      "wait": 4,
+      "private": 4000,
+      "started": false,
+      "sea": 500000
+    },
+    "results": {
+      "revenue": 589356.8,
+      "avoidable": 294678.4,
+      "alternative": 350000,
+      "storage": 20000,
+      "move": 120000,
+      "residualRzd": 11275,
+      "residualContract": 101000.0,
+      "waiting": 384260.0,
+      "netTransfer": 807596.6,
+      "benefit": -423336.6,
+      "firstRelease": 0.525,
+      "lastRelease": 1.0,
+      "breakEvenAltPrice": -3666.83,
+      "breakEvenMove": -303336.6
+    }
+  }
+}
