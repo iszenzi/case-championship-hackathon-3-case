@@ -1,0 +1,18 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.html text eol=lf
+*.csv text eol=lf
+*.pptx binary
+*.xlsx binary
+*.pdf binary
+*.docx binary
+*.png binary
+# Preserve public source snapshots and original CSV byte-for-byte for SHA256 checks.
+sources/** -text
+sources/README.md text eol=lf
+archive/teammate/results/*.csv -text

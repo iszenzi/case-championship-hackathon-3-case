@@ -1,0 +1,2 @@
+# Runtime: Python 3.10+ standard library; no pip dependencies.
+# Node.js 18+ is needed only for JavaScript cross-checks.

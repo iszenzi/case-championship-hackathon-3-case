@@ -1,0 +1,28 @@
+name: Проверка расчётов и комплекта
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Получить репозиторий
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Проверить среду
+        run: |
+          python3 --version
+          node --version
+      - name: Повторить независимые расчёты
+        run: python3 scripts/reproduce.py
+      - name: Проверить финансовые инварианты и границы
+        run: python3 -m unittest discover -s tests -v
+      - name: Проверить ссылки, источники и состав
+        run: python3 scripts/check_repository.py
+      - name: Убедиться в воспроизводимости опубликованных файлов
+        run: git diff --exit-code -- app/index.html results/

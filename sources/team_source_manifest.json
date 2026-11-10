@@ -1,0 +1,180 @@
+[
+  {
+    "id": "V01",
+    "url": "https://www.vaninoport.ru/wp-content/uploads/2026/01/2026_prr_dlya-sajta-1-1.pdf",
+    "title": "Тариф Ванино, приказ 333 от 30.12.2025",
+    "accessed_utc": "2026-11-09T17:23:36.154121+00:00",
+    "local_file": "sources/vanino_tariffs_2026.pdf",
+    "bytes": 152034,
+    "sha256": "c49c191d394257a9b662c2bdbc7492ebf4f8a19c775ce553aa625cb3f1a49c81",
+    "status": "downloaded"
+  },
+  {
+    "id": "B01",
+    "url": "https://bunker-port.ru/prices",
+    "title": "Опубликованные стартовые цены Бункер-Порт",
+    "accessed_utc": "2026-11-09T17:23:36.154984+00:00",
+    "local_file": "sources/bunker_prices.html",
+    "bytes": 477104,
+    "sha256": "719da77f8df4532f9645f805a2baa809efd7a85d19b330c3db0080462656b424",
+    "status": "downloaded"
+  },
+  {
+    "id": "B02",
+    "url": "https://bunker-port.ru/",
+    "title": "Инфраструктура Бункер-Порт, заявления оператора",
+    "accessed_utc": "2026-11-09T17:23:36.155162+00:00",
+    "local_file": "sources/bunker_infrastructure.html",
+    "bytes": 1007888,
+    "sha256": "ce658571cfe1f703a3e34673b62d4abe3d4186e4b6fa4dda9b74969123763dea",
+    "status": "downloaded"
+  },
+  {
+    "id": "T01",
+    "url": "https://tsvg.ru/territory",
+    "title": "Инфраструктура Терминал Совгавань",
+    "accessed_utc": "2026-11-09T17:23:36.155263+00:00",
+    "status": "not_downloaded",
+    "error": "HTTPError: HTTP Error 500: Internal Server Error",
+    "local_file": null
+  },
+  {
+    "id": "G01",
+    "url": "https://www.vaninoport.ru/where.html",
+    "title": "География Ванино; 32 км по автодороге между населёнными пунктами",
+    "accessed_utc": "2026-11-09T17:23:36.155336+00:00",
+    "local_file": "sources/vanino_geography.html",
+    "bytes": 46041,
+    "sha256": "dc88cad5e1e98ed24e034bf77657b8ca5b4767460c6d539cb5444920ca402b84",
+    "status": "downloaded"
+  },
+  {
+    "id": "A01",
+    "url": "https://atr27.ru/index.php/uslugi/34-avtomobilnye-gruzoperevozki/127-gruzoperevozki-po-gorodu",
+    "title": "Региональный ценовой ориентир: 20 тонн, 1900 руб/час, минимум 4 часа",
+    "accessed_utc": "2026-11-09T17:23:36.155405+00:00",
+    "local_file": "sources/regional_truck_rates.html",
+    "bytes": 197272,
+    "sha256": "f3926d54c80e62c80835ea1d577b164d2f71de2312f85259e0dc4f2391e4d153",
+    "status": "downloaded"
+  },
+  {
+    "id": "A02",
+    "url": "https://atr27.ru/index.php/price",
+    "title": "Региональный ориентир комплексных услуг, не цена локального плеча",
+    "accessed_utc": "2026-11-09T17:23:36.155759+00:00",
+    "local_file": "sources/regional_container_rates.html",
+    "bytes": 213350,
+    "sha256": "78d65fe6de57aa1145be4de3e3cbaa82376e38026c05d6591ffc98b48d10ea6b",
+    "status": "downloaded"
+  },
+  {
+    "id": "L01",
+    "url": "https://legalacts.ru/doc/prikaz-fst-rossii-ot-29042015-n-127-t1/",
+    "title": "Приказ 127-т/1, правила и базовые таблицы платы",
+    "accessed_utc": "2026-11-09T17:23:36.570446+00:00",
+    "local_file": "sources/rzd_holding_rules.html",
+    "bytes": 254668,
+    "sha256": "18be7fee5e4517913d671aa848bd5a2de99dbd67f701245e60178beeddcc2ffd",
+    "status": "downloaded"
+  },
+  {
+    "id": "L02",
+    "url": "https://sudact.ru/law/prikaz-fas-rossii-ot-03082026-n-61226/",
+    "title": "Приказ ФАС 612/26: индекс 2.663 с 01.10.2026",
+    "accessed_utc": "2026-11-09T17:23:36.663968+00:00",
+    "local_file": "sources/rzd_index_oct2026.html",
+    "bytes": 40980,
+    "sha256": "c74c3416bbc0a98a69bf48c29b43694652263752214e1e77b5da44792a8f3842",
+    "status": "downloaded"
+  },
+  {
+    "id": "L03",
+    "url": "https://base.garant.ru/413735040/",
+    "title": "Приказ 88/26: надбавка 1.01, 01.03.2026–28.02.2027",
+    "accessed_utc": "2026-11-09T17:23:36.702817+00:00",
+    "local_file": "sources/rzd_security_surcharge.html",
+    "bytes": 83426,
+    "sha256": "f9888f6266d1ae0642e5de7826b7fc842b0f1bbcce036f9436f6c619667165bb",
+    "status": "downloaded"
+  },
+  {
+    "id": "L04",
+    "url": "https://legalacts.ru/doc/federalnyi-zakon-ot-10012003-n-18-fz-ustav/",
+    "title": "Устав железнодорожного транспорта, статья 31 о переадресовке",
+    "accessed_utc": "2026-11-09T17:23:36.755058+00:00",
+    "local_file": "sources/rail_charter.html",
+    "bytes": 488939,
+    "sha256": "e1fba7e54cff51e784ef9bf13148c204d220c151e3f3a1410844465367acf0cb",
+    "status": "downloaded"
+  },
+  {
+    "id": "C01",
+    "url": "https://sudact.ru/arbitral/doc/ec7zyp6I456I/",
+    "title": "Задержка 21–25.02.2025, отсутствие складских площадей",
+    "accessed_utc": "2026-11-09T17:23:37.021742+00:00",
+    "local_file": "sources/court_A73_6127_2025.html",
+    "bytes": 61444,
+    "sha256": "a80bb29cb95075a035ce2ed78d4df5eed2a6e8ddecbdd1920f2729aaea6243f4",
+    "status": "downloaded"
+  },
+  {
+    "id": "C02",
+    "url": "https://base.garant.ru/66904591/",
+    "title": "Плата за простой, события декабря 2024–января 2025",
+    "accessed_utc": "2026-11-09T17:23:37.056662+00:00",
+    "local_file": "sources/court_A73_69_2026.html",
+    "bytes": 91281,
+    "sha256": "5a88f8e7bb6c9c3acc3f1cd176f267ce6c715cbe3475677b476d0fafd0ebac50",
+    "status": "downloaded"
+  },
+  {
+    "id": "C03",
+    "url": "https://base.garant.ru/67013800/",
+    "title": "Дополнительный спор о плате, акт от 21.09.2026",
+    "accessed_utc": "2026-11-09T17:23:37.221501+00:00",
+    "local_file": "sources/court_A73_5756_2026.html",
+    "bytes": 92970,
+    "sha256": "e3815b9a45c5721146c78c4762f15327864319657c50ef25382602b65c928a7d",
+    "status": "downloaded"
+  },
+  {
+    "id": "C04",
+    "url": "https://sudact.ru/arbitral/doc/sOz4kFhnwcZj/",
+    "title": "Исторические договорные ставки: не нормативная ставка РЖД",
+    "accessed_utc": "2026-11-09T17:23:37.375771+00:00",
+    "local_file": "sources/court_contractual_wagon_fees.html",
+    "bytes": 135190,
+    "sha256": "497d4d5ca9387b8c79aa3ba55e484fe1225e680c6c28c0a2a8ccb055d3e81e34",
+    "status": "downloaded"
+  },
+  {
+    "id": "P01",
+    "url": "https://ampvanino.ru/sovgavan/",
+    "title": "Администрация порта, операторы и специализация",
+    "accessed_utc": "2026-11-09T17:23:37.512839+00:00",
+    "local_file": "sources/sovgavan_authority.html",
+    "bytes": 79283,
+    "sha256": "16f4243651307fa153cf1dc090fdae4879b4ea02e84637d1956355821c624e0f",
+    "status": "downloaded"
+  },
+  {
+    "id": "P02",
+    "url": "https://1520international.com/content/2026/noyabr-2026/dvizhentsy-i-stividory/",
+    "title": "Отраслевой контекст, 02.11.2026",
+    "accessed_utc": "2026-11-09T17:23:37.515597+00:00",
+    "local_file": "sources/rzd_port_coordination.html",
+    "bytes": 50223,
+    "sha256": "209d87cc1c73bf3eab9f08726f96cb94b9f3b46429ca4d8340dc8d337913ba49",
+    "status": "downloaded"
+  },
+  {
+    "id": "U01",
+    "title": "Наружная длина стандартных контейнеров: 6,058 и 12,192 м",
+    "url": "https://tools.tritoncontainer.com/tritoncontainer/unitSpecs/fleet",
+    "accessed_date": "2026-11-09",
+    "status": "web_verified",
+    "local_file": null,
+    "note": "Verified official fleet table through web tool. Facts only reproduced."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "files": 89,
+  "broken_local_links": [],
+  "secret_pattern_matches": [],
+  "excluded_files_present": [],
+  "source_hashes_ok": 8,
+  "decks": {
+    "Vanino_Object_Motion.pptx": {
+      "slides": 8,
+      "charts": 2
+    },
+    "Vanino_Static_Reserve.pptx": {
+      "slides": 8,
+      "charts": 0
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "127t1.html",
+    "bytes": 254668,
+    "sha256": "3b9b7593e62c41e074118c71ab68670731073e5fe4991b2b4369a21631300321"
+  },
+  {
+    "file": "container_contract.docx",
+    "bytes": 117631,
+    "sha256": "8c259ef583e91cbabe7cca71509a3ab4abe6af5502ee4683328cea6516f97a84"
+  },
+  {
+    "file": "court_A73_6127_2025.html",
+    "bytes": 61444,
+    "sha256": "a80bb29cb95075a035ce2ed78d4df5eed2a6e8ddecbdd1920f2729aaea6243f4"
+  },
+  {
+    "file": "organizer_catalog_live_e208.json",
+    "bytes": 61264,
+    "sha256": "f6aa3f0d1a2da2b3764100364897c54f3d04258bf04ebc429ee586d364895709"
+  },
+  {
+    "file": "security88.html",
+    "bytes": 83426,
+    "sha256": "f9888f6266d1ae0642e5de7826b7fc842b0f1bbcce036f9436f6c619667165bb"
+  },
+  {
+    "file": "team_source_facts.json",
+    "bytes": 3821,
+    "sha256": "b4e58c4761250205b8cfe17a3cf59d88fecfdd8d75d7a43124b730382669687c"
+  },
+  {
+    "file": "team_source_manifest.json",
+    "bytes": 7644,
+    "sha256": "42bb2ef1e0955f93f681199c06c62a1c2a8146ca4e131b1f5b1c1ed8cda2b62d"
+  },
+  {
+    "file": "vanino_tariff_2026.pdf",
+    "bytes": 152034,
+    "sha256": "c49c191d394257a9b662c2bdbc7492ebf4f8a19c775ce553aa625cb3f1a49c81"
+  }
+]

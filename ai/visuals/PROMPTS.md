@@ -1,0 +1,11 @@
+# Промпты коллажей
+
+Инструмент: встроенный Imagegen, новые изображения, transparent_background=true. Пользователь запросил презентацию в визуальном стиле Pinterest. Ассистент просмотрел изображение референса; напрямую в генератор оно не передавалось. Изображения сохранялись с альфа-каналом, без дальнейшего редактирования.
+
+## train_collage.png
+
+Use case: productivity-visual. Create one original transparent-background editorial collage asset for a Russian rail and port logistics presentation. A dramatic three-quarter front view of a generic freight locomotive and two intermodal containers, rendered as high-contrast black-and-white vintage photographic paper cutouts with coarse halftone grain and slightly torn white edges. Behind the locomotive, one irregular vivid vermilion-red jagged starburst and a thin off-white zigzag outline, in an avant-garde magazine / punk zine collage vocabulary. The locomotive and starburst form one compact vertical composition, isolated with true alpha transparency. No background rectangle. Camera at low angle, train pointing slightly right. Preserve credible railway machinery. No company logos, no letters, no numbers, no captions, no flags, no skulls or people. All elements fit inside the canvas with 5% clear padding. This is an illustrative collage, not a photo documenting a real terminal. Suitable to occupy the left half of a black slide, with typography added separately.
+
+## port_collage.png
+
+Use case: productivity-visual. An original isolated transparent cut-paper editorial collage for a rail-port logistics presentation. A tall harbor gantry crane lifting one rectangular intermodal shipping container above a small cargo vessel silhouette. Black and white photographic cutouts, vintage newspaper halftone grain, rough off-white torn paper edges, hard contrast. One vivid red irregular circle / jagged splash behind the crane, a few thin off-white broken outline strokes. Compact asymmetrical upright composition. True alpha background, no black or white background rectangle, all elements inside canvas with margins. No text, letters, logos or labels; no people. Not a documentary photo of any real port. Designed for placing on a black presentation slide, with all slide typography added separately.

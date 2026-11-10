@@ -1,0 +1,1060 @@
+{
+  "metadata": {
+    "spreadsheetId": "1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ/edit",
+    "properties": {
+      "title": "Хакатон МАИ — данные для трёх исходных треков",
+      "locale": "ru_RU",
+      "timeZone": "Europe/Moscow"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 27663085,
+          "title": "Источники",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 994,
+            "columnCount": 18,
+            "frozenRowCount": 1,
+            "rowGroupControlAfter": true,
+            "columnGroupControlAfter": true
+          }
+        }
+      }
+    ]
+  },
+  "head": {
+    "spreadsheetId": "1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ/edit",
+    "properties": {
+      "title": "Хакатон МАИ — данные для трёх исходных треков",
+      "locale": "ru_RU",
+      "timeZone": "Europe/Moscow"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 27663085,
+          "title": "Источники",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 994,
+            "columnCount": 18,
+            "frozenRowCount": 1,
+            "rowGroupControlAfter": true,
+            "columnGroupControlAfter": true
+          }
+        },
+        "data": [
+          {
+            "rowData": [
+              {
+                "values": [
+                  {
+                    "formattedValue": "Источник",
+                    "userEnteredValue": {
+                      "stringValue": "Источник"
+                    }
+                  },
+                  {
+                    "formattedValue": "Что за данные",
+                    "userEnteredValue": {
+                      "stringValue": "Что за данные"
+                    }
+                  },
+                  {
+                    "formattedValue": "Треки: А1 — прогноз; А2 — хабы; А3 — логистика",
+                    "userEnteredValue": {
+                      "stringValue": "Треки: А1 — прогноз; А2 — хабы; А3 — логистика"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Точно: связность городов",
+                    "userEnteredValue": {
+                      "stringValue": "Точно: связность городов"
+                    },
+                    "hyperlink": "https://tochno.st/datasets/intercity_connectivity"
+                  },
+                  {
+                    "formattedValue": "Расстояния и расчётное время поездки между 180 городами по авто, ЖД и авиа.",
+                    "userEnteredValue": {
+                      "stringValue": "Расстояния и расчётное время поездки между 180 городами по авто, ЖД и авиа."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Точно / Росстат: транспорт регионов",
+                    "userEnteredValue": {
+                      "stringValue": "Точно / Росстат: транспорт регионов"
+                    },
+                    "hyperlink": "https://tochno.st/datasets/regions_collection"
+                  },
+                  {
+                    "formattedValue": "Годовые перевозки пассажиров и грузов, грузооборот и плотность дорог по регионам.",
+                    "userEnteredValue": {
+                      "stringValue": "Годовые перевозки пассажиров и грузов, грузооборот и плотность дорог по регионам."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "АСОП: грузооборот и мощности портов",
+                    "userEnteredValue": {
+                      "stringValue": "АСОП: грузооборот и мощности портов"
+                    },
+                    "hyperlink": "https://www.morport.com/rus/content/statistika-0"
+                  },
+                  {
+                    "formattedValue": "Грузооборот и мощности морских портов России за 2000–2024 годы.",
+                    "userEnteredValue": {
+                      "stringValue": "Грузооборот и мощности морских портов России за 2000–2024 годы."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Минтранс: пассажирооборот",
+                    "userEnteredValue": {
+                      "stringValue": "Минтранс: пассажирооборот"
+                    },
+                    "hyperlink": "https://www.mintrans.gov.ru/eye/documents/7/14303"
+                  },
+                  {
+                    "formattedValue": "Месячный пассажирооборот транспорта России за 2022–2024 годы.",
+                    "userEnteredValue": {
+                      "stringValue": "Месячный пассажирооборот транспорта России за 2022–2024 годы."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1",
+                    "userEnteredValue": {
+                      "stringValue": "А1"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "АСОП: морские бассейны",
+                    "userEnteredValue": {
+                      "stringValue": "АСОП: морские бассейны"
+                    },
+                    "hyperlink": "https://www.morport.com/rus/content/statistika-0"
+                  },
+                  {
+                    "formattedValue": "Грузооборот морских портов по бассейнам и направлениям перевозок.",
+                    "userEnteredValue": {
+                      "stringValue": "Грузооборот морских портов по бассейнам и направлениям перевозок."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "АСОП: подвоз грузов в порты",
+                    "userEnteredValue": {
+                      "stringValue": "АСОП: подвоз грузов в порты"
+                    },
+                    "hyperlink": "https://www.morport.com/rus/content/statistika-0"
+                  },
+                  {
+                    "formattedValue": "Объёмы подвоза грузов в морские порты по видам транспорта.",
+                    "userEnteredValue": {
+                      "stringValue": "Объёмы подвоза грузов в морские порты по видам транспорта."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росморпорт: характеристики портов",
+                    "userEnteredValue": {
+                      "stringValue": "Росморпорт: характеристики портов"
+                    },
+                    "hyperlink": "https://www.rosmorport.ru/services/seaports/"
+                  },
+                  {
+                    "formattedValue": "Координаты, причалы, виды грузов и заявленные мощности морских портов.",
+                    "userEnteredValue": {
+                      "stringValue": "Координаты, причалы, виды грузов и заявленные мощности морских портов."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "OpenStreetMap / Geofabrik: сеть РФ",
+                    "userEnteredValue": {
+                      "stringValue": "OpenStreetMap / Geofabrik: сеть РФ"
+                    },
+                    "hyperlink": "https://download.geofabrik.de/russia.html"
+                  },
+                  {
+                    "formattedValue": "Карта дорог, железных дорог, станций и транспортных узлов России.",
+                    "userEnteredValue": {
+                      "stringValue": "Карта дорог, железных дорог, станций и транспортных узлов России."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Точно: населённые пункты",
+                    "userEnteredValue": {
+                      "stringValue": "Точно: населённые пункты"
+                    },
+                    "hyperlink": "https://tochno.st/datasets/allsettlements"
+                  },
+                  {
+                    "formattedValue": "Население и координаты населённых пунктов России по переписи 2020–2021 годов.",
+                    "userEnteredValue": {
+                      "stringValue": "Население и координаты населённых пунктов России по переписи 2020–2021 годов."
+                    }
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Точно / Росстат: муниципальный транспорт",
+                    "userEnteredValue": {
+                      "stringValue": "Точно / Росстат: муниципальный транспорт"
+                    },
+                    "hyperlink": "https://tochno.st/datasets/bdmo"
+                  },
+                  {
+                    "formattedValue": "Доли жителей без регулярного сообщения и местных дорог вне нормативов.",
+                    "userEnteredValue": {
+                      "stringValue": "Доли жителей без регулярного сообщения и местных дорог вне нормативов."
+                    }
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "OurAirports: аэропорты РФ",
+                    "userEnteredValue": {
+                      "stringValue": "OurAirports: аэропорты РФ"
+                    },
+                    "hyperlink": "https://ourairports.com/data/"
+                  },
+                  {
+                    "formattedValue": "Координаты, типы и коды аэропортов и других авиационных объектов России.",
+                    "userEnteredValue": {
+                      "stringValue": "Координаты, типы и коды аэропортов и других авиационных объектов России."
+                    }
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росавиация: реестр аэродромов",
+                    "userEnteredValue": {
+                      "stringValue": "Росавиация: реестр аэродромов"
+                    },
+                    "hyperlink": "https://favt.gov.ru/dejatelnost-ajeroporty-i-ajerodromy-reestr-grajdanskih-ajerodromov-rf/"
+                  },
+                  {
+                    "formattedValue": "Официальный реестр гражданских аэродромов и вертодромов России, срез 2025 года.",
+                    "userEnteredValue": {
+                      "stringValue": "Официальный реестр гражданских аэродромов и вертодромов России, срез 2025 года."
+                    }
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "GeoNames: населённые пункты РФ",
+                    "userEnteredValue": {
+                      "stringValue": "GeoNames: населённые пункты РФ"
+                    },
+                    "hyperlink": "https://download.geonames.org/export/dump/"
+                  },
+                  {
+                    "formattedValue": "Названия и координаты населённых пунктов России.",
+                    "userEnteredValue": {
+                      "stringValue": "Названия и координаты населённых пунктов России."
+                    }
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Точно / Росстат: ВРП",
+                    "userEnteredValue": {
+                      "stringValue": "Точно / Росстат: ВРП"
+                    },
+                    "hyperlink": "https://tochno.st/datasets/regions_collection"
+                  },
+                  {
+                    "formattedValue": "ВРП, ВРП на душу населения и индекс его физического объёма по регионам.",
+                    "userEnteredValue": {
+                      "stringValue": "ВРП, ВРП на душу населения и индекс его физического объёма по регионам."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Минтранс: водный завоз на Север",
+                    "userEnteredValue": {
+                      "stringValue": "Минтранс: водный завоз на Север"
+                    },
+                    "hyperlink": "https://www.mintrans.gov.ru/eye/documents/7/14303"
+                  },
+                  {
+                    "formattedValue": "Объёмы водного завоза грузов в районы Крайнего Севера за 2023–2025 годы.",
+                    "userEnteredValue": {
+                      "stringValue": "Объёмы водного завоза грузов в районы Крайнего Севера за 2023–2025 годы."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росстат: грузовые перевозки",
+                    "userEnteredValue": {
+                      "stringValue": "Росстат: грузовые перевозки"
+                    },
+                    "hyperlink": "https://rosstat.gov.ru/statistics/transport"
+                  },
+                  {
+                    "formattedValue": "Перевозки грузов, грузооборот и погрузка на ЖД. Файл пока не проверен.",
+                    "userEnteredValue": {
+                      "stringValue": "Перевозки грузов, грузооборот и погрузка на ЖД. Файл пока не проверен."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1",
+                    "userEnteredValue": {
+                      "stringValue": "А1"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росстат: пассажирские перевозки",
+                    "userEnteredValue": {
+                      "stringValue": "Росстат: пассажирские перевозки"
+                    },
+                    "hyperlink": "https://rosstat.gov.ru/statistics/transport"
+                  },
+                  {
+                    "formattedValue": "Перевозки пассажиров и пассажирооборот. Файл пока не проверен.",
+                    "userEnteredValue": {
+                      "stringValue": "Перевозки пассажиров и пассажирооборот. Файл пока не проверен."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1",
+                    "userEnteredValue": {
+                      "stringValue": "А1"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росавиация: статистика перевозок",
+                    "userEnteredValue": {
+                      "stringValue": "Росавиация: статистика перевозок"
+                    },
+                    "hyperlink": "https://www.favt.gov.ru/opendata/"
+                  },
+                  {
+                    "formattedValue": "Пассажирские авиаперевозки и показатели аэропортов. Файлы пока не проверены.",
+                    "userEnteredValue": {
+                      "stringValue": "Пассажирские авиаперевозки и показатели аэропортов. Файлы пока не проверены."
+                    }
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    }
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "ЕМИСС",
+                    "userEnteredValue": {
+                      "stringValue": "ЕМИСС"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: ЕМИСС.\nИсходное описание: ВРП, доходы, занятость, цены, оборот торговли.\nСсылка или указание из презентации: https://www.fedstat.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.fedstat.ru"
+                  },
+                  {
+                    "formattedValue": "ВРП, доходы, занятость, цены, оборот торговли",
+                    "userEnteredValue": {
+                      "stringValue": "ВРП, доходы, занятость, цены, оборот торговли"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росстат: регионы",
+                    "userEnteredValue": {
+                      "stringValue": "Росстат: регионы"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: Росстат: регионы.\nИсходное описание: Социально-экономические показатели по субъектам.\nСсылка или указание из презентации: https://rosstat.gov.ru/regional_statistics.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://rosstat.gov.ru/regional_statistics"
+                  },
+                  {
+                    "formattedValue": "Социально-экономические показатели по субъектам",
+                    "userEnteredValue": {
+                      "stringValue": "Социально-экономические показатели по субъектам"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росстат: демография и перепись 2020",
+                    "userEnteredValue": {
+                      "stringValue": "Росстат: демография и перепись 2020"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: Росстат: демография и перепись 2020.\nИсходное описание: Численность населения, миграция, прогнозы.\nСсылка или указание из презентации: https://rosstat.gov.ru/folder/12781.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://rosstat.gov.ru/folder/12781"
+                  },
+                  {
+                    "formattedValue": "Численность населения, миграция, прогнозы",
+                    "userEnteredValue": {
+                      "stringValue": "Численность населения, миграция, прогнозы"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Банк России",
+                    "userEnteredValue": {
+                      "stringValue": "Банк России"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: Банк России.\nИсходное описание: Ключевая ставка, курсы, инфляция, платёжный баланс.\nСсылка или указание из презентации: https://www.cbr.ru/statistics.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.cbr.ru/statistics"
+                  },
+                  {
+                    "formattedValue": "Ключевая ставка, курсы, инфляция, платёжный баланс",
+                    "userEnteredValue": {
+                      "stringValue": "Ключевая ставка, курсы, инфляция, платёжный баланс"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Минэкономразвития",
+                    "userEnteredValue": {
+                      "stringValue": "Минэкономразвития"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: Минэкономразвития.\nИсходное описание: Макроэкономический прогноз.\nСсылка или указание из презентации: https://economy.gov.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://economy.gov.ru"
+                  },
+                  {
+                    "formattedValue": "Макроэкономический прогноз",
+                    "userEnteredValue": {
+                      "stringValue": "Макроэкономический прогноз"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "ФНС: открытые данные",
+                    "userEnteredValue": {
+                      "stringValue": "ФНС: открытые данные"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: ФНС: открытые данные.\nИсходное описание: Реестры юрлиц и ИП (для новых предприятий).\nСсылка или указание из презентации: https://www.nalog.gov.ru/opendata.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.nalog.gov.ru/opendata"
+                  },
+                  {
+                    "formattedValue": "Реестры юрлиц и ИП (для новых предприятий)",
+                    "userEnteredValue": {
+                      "stringValue": "Реестры юрлиц и ИП (для новых предприятий)"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А1; А2",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "ФИАС / ГАР",
+                    "userEnteredValue": {
+                      "stringValue": "ФИАС / ГАР"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 10.\nИсходное название: ФИАС / ГАР.\nИсходное описание: Адресный реестр для геопривязки.\nСсылка или указание из презентации: https://fias.nalog.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://fias.nalog.ru"
+                  },
+                  {
+                    "formattedValue": "Адресный реестр для геопривязки",
+                    "userEnteredValue": {
+                      "stringValue": "Адресный реестр для геопривязки"
+                    },
+                    "note": "Источник из исходной презентации, слайд 10."
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Производственный календарь (isDayOff API)",
+                    "userEnteredValue": {
+                      "stringValue": "Производственный календарь (isDayOff API)"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 11.\nИсходное название: Производственный календарь (isDayOff API).\nИсходное описание: Выходные и праздники, в том числе как признаки модели.\nСсылка или указание из презентации: https://isdayoff.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://isdayoff.ru"
+                  },
+                  {
+                    "formattedValue": "Выходные и праздники, в том числе как признаки модели",
+                    "userEnteredValue": {
+                      "stringValue": "Выходные и праздники, в том числе как признаки модели"
+                    },
+                    "note": "Источник из исходной презентации, слайд 11."
+                  },
+                  {
+                    "formattedValue": "А1",
+                    "userEnteredValue": {
+                      "stringValue": "А1"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "ВНИИГМИ-МЦД (Росгидромет)",
+                    "userEnteredValue": {
+                      "stringValue": "ВНИИГМИ-МЦД (Росгидромет)"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 11.\nИсходное название: ВНИИГМИ-МЦД (Росгидромет).\nИсходное описание: Архив метеоданных по РФ.\nСсылка или указание из презентации: http://meteo.ru/data.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "http://meteo.ru/data"
+                  },
+                  {
+                    "formattedValue": "Архив метеоданных по РФ",
+                    "userEnteredValue": {
+                      "stringValue": "Архив метеоданных по РФ"
+                    },
+                    "note": "Источник из исходной презентации, слайд 11."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Open-Meteo",
+                    "userEnteredValue": {
+                      "stringValue": "Open-Meteo"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 11.\nИсходное название: Open-Meteo.\nИсходное описание: Исторические и прогнозные погодные данные через API.\nСсылка или указание из презентации: https://open-meteo.com.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://open-meteo.com"
+                  },
+                  {
+                    "formattedValue": "Исторические и прогнозные погодные данные через API",
+                    "userEnteredValue": {
+                      "stringValue": "Исторические и прогнозные погодные данные через API"
+                    },
+                    "note": "Источник из исходной презентации, слайд 11."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Транспортная стратегия РФ до 2030/2035 года",
+                    "userEnteredValue": {
+                      "stringValue": "Транспортная стратегия РФ до 2030/2035 года"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Транспортная стратегия РФ до 2030 года с прогнозом на период до 2035 года.\nИсходное описание: Целевые показатели и приоритеты. Распоряжение Правительства РФ № 3363-р от 27.11.2021.\nСсылка или указание из презентации: http://government.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "http://government.ru"
+                  },
+                  {
+                    "formattedValue": "Целевые показатели и приоритеты. Распоряжение Правительства РФ № 3363-р от 27.11.2021",
+                    "userEnteredValue": {
+                      "stringValue": "Целевые показатели и приоритеты. Распоряжение Правительства РФ № 3363-р от 27.11.2021"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Правительство РФ: нацпроект и магистральная инфраструктура",
+                    "userEnteredValue": {
+                      "stringValue": "Правительство РФ: нацпроект и магистральная инфраструктура"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Национальный проект «Эффективная и конкурентная экономика» и Комплексный план модернизации и расширения магистральной инфраструктуры.\nИсходное описание: Объёмы финансирования, проекты.\nСсылка или указание из презентации: https://www.government.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.government.ru"
+                  },
+                  {
+                    "formattedValue": "Объёмы финансирования, проекты",
+                    "userEnteredValue": {
+                      "stringValue": "Объёмы финансирования, проекты"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Электронный бюджет",
+                    "userEnteredValue": {
+                      "stringValue": "Электронный бюджет"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Электронный бюджет.\nИсходное описание: Расходы бюджета по программам.\nСсылка или указание из презентации: https://budget.gov.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://budget.gov.ru"
+                  },
+                  {
+                    "formattedValue": "Расходы бюджета по программам",
+                    "userEnteredValue": {
+                      "stringValue": "Расходы бюджета по программам"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Национальный центр ГЧП (Росинфра)",
+                    "userEnteredValue": {
+                      "stringValue": "Национальный центр ГЧП (Росинфра)"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Национальный центр ГЧП (Росинфра).\nИсходное описание: Проекты ГЧП и концессий, частное финансирование.\nСсылка или указание из презентации: https://rosinfra.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://rosinfra.ru"
+                  },
+                  {
+                    "formattedValue": "Проекты ГЧП и концессий, частное финансирование",
+                    "userEnteredValue": {
+                      "stringValue": "Проекты ГЧП и концессий, частное финансирование"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Минпромторг: ГИСП",
+                    "userEnteredValue": {
+                      "stringValue": "Минпромторг: ГИСП"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Минпромторг: ГИСП.\nИсходное описание: Транспортное машиностроение, меры поддержки.\nСсылка или указание из презентации: https://gisp.gov.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://gisp.gov.ru"
+                  },
+                  {
+                    "formattedValue": "Транспортное машиностроение, меры поддержки",
+                    "userEnteredValue": {
+                      "stringValue": "Транспортное машиностроение, меры поддержки"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Фонд развития промышленности",
+                    "userEnteredValue": {
+                      "stringValue": "Фонд развития промышленности"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 12.\nИсходное название: Фонд развития промышленности.\nИсходное описание: Финансирование промпроектов.\nСсылка или указание из презентации: https://frprf.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://frprf.ru"
+                  },
+                  {
+                    "formattedValue": "Финансирование промпроектов",
+                    "userEnteredValue": {
+                      "stringValue": "Финансирование промпроектов"
+                    },
+                    "note": "Источник из исходной презентации, слайд 12."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росстат: парк транспортных средств",
+                    "userEnteredValue": {
+                      "stringValue": "Росстат: парк транспортных средств"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 13.\nИсходное название: Росстат: парк транспортных средств.\nИсходное описание: Структура автопарка (основа для долей электромобилей).\nСсылка или указание из презентации: https://rosstat.gov.ru/statistics/transport.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://rosstat.gov.ru/statistics/transport"
+                  },
+                  {
+                    "formattedValue": "Структура автопарка (основа для долей электромобилей)",
+                    "userEnteredValue": {
+                      "stringValue": "Структура автопарка (основа для долей электромобилей)"
+                    },
+                    "note": "Источник из исходной презентации, слайд 13."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Автостат",
+                    "userEnteredValue": {
+                      "stringValue": "Автостат"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 13.\nИсходное название: Автостат.\nИсходное описание: Рынок автомобилей и электромобилей (частично открыт).\nСсылка или указание из презентации: https://www.autostat.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.autostat.ru"
+                  },
+                  {
+                    "formattedValue": "Рынок автомобилей и электромобилей (частично открыт)",
+                    "userEnteredValue": {
+                      "stringValue": "Рынок автомобилей и электромобилей (частично открыт)"
+                    },
+                    "note": "Источник из исходной презентации, слайд 13."
+                  },
+                  {
+                    "formattedValue": "А1; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Минприроды России",
+                    "userEnteredValue": {
+                      "stringValue": "Минприроды России"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 13.\nИсходное название: Минприроды России.\nИсходное описание: Доклады о состоянии окружающей среды, выбросы.\nСсылка или указание из презентации: https://www.mnr.gov.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.mnr.gov.ru"
+                  },
+                  {
+                    "formattedValue": "Доклады о состоянии окружающей среды, выбросы",
+                    "userEnteredValue": {
+                      "stringValue": "Доклады о состоянии окружающей среды, выбросы"
+                    },
+                    "note": "Источник из исходной презентации, слайд 13."
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "formattedValue": "Росгидромет",
+                    "userEnteredValue": {
+                      "stringValue": "Росгидромет"
+                    },
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 13.\nИсходное название: Росгидромет.\nИсходное описание: Качество воздуха и мониторинг загрязнений.\nСсылка или указание из презентации: https://www.meteorf.gov.ru.\nДобавлен источник, указанный в презентации; конкретная выгрузка и её доступность отдельно не проверялись.",
+                    "hyperlink": "https://www.meteorf.gov.ru"
+                  },
+                  {
+                    "formattedValue": "Качество воздуха и мониторинг загрязнений",
+                    "userEnteredValue": {
+                      "stringValue": "Качество воздуха и мониторинг загрязнений"
+                    },
+                    "note": "Источник из исходной презентации, слайд 13."
+                  },
+                  {
+                    "formattedValue": "А1; А2; А3",
+                    "userEnteredValue": {
+                      "stringValue": "А1; А2; А3"
+                    },
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              },
+              {
+                "values": [
+                  {
+                    "note": "Из исходной презентации «Кейс-чемпионат 2026-v5 SHORT», слайд 13.\nИсходное название: Данные по беспилотному транспорту и передовым транспортным технологиям.\nИсходное описание: Пилотные проекты и экспериментальные правовые режимы: публикации Минтранса, Минэкономразвития и АНО «Цифровая экономика». Для гиперлупа открытых количественных данных практически нет, поэтому параметры задаются экспертно по международным публикациям.\nСсылка или указание из презентации: Найти самостоятельно и подготовить отчет о ресурсах и качестве данных.\nВ презентации нет готового файла или единого URL: это направление самостоятельного поиска, а не выданный набор данных."
+                  },
+                  {
+                    "note": "Источник из исходной презентации, слайд 13."
+                  },
+                  {
+                    "note": "Рекомендуемая применимость к трекам каталога."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tail": {
+    "spreadsheetId": "1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1lWth7AgxGWDGiAHEXNgSjNQTaCmZDxHrBlmADg6GWLQ/edit",
+    "properties": {
+      "title": "Хакатон МАИ — данные для трёх исходных треков",
+      "locale": "ru_RU",
+      "timeZone": "Europe/Moscow"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 27663085,
+          "title": "Источники",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 994,
+            "columnCount": 18,
+            "frozenRowCount": 1,
+            "rowGroupControlAfter": true,
+            "columnGroupControlAfter": true
+          }
+        },
+        "data": [
+          {
+            "startRow": 80
+          }
+        ]
+      }
+    ]
+  }
+}

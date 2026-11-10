@@ -1,0 +1,15 @@
+{
+  "browser": "Edge headless",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "pageErrors": [],
+  "scenarios": 4,
+  "settlementModes": 2,
+  "invalidInput": true,
+  "mapAnimation": true,
+  "export": true,
+  "exactHypothesis": true,
+  "mobileNoOverflow": true
+}
