@@ -31,7 +31,7 @@ for p in sorted((R/'presentation').glob('*.pptx')):
         assert z.testzip() is None
         slide_names=[n for n in z.namelist() if re.fullmatch(r'ppt/slides/slide\d+\.xml',n)]
         text=' '.join(t.text or '' for name in slide_names for t in ET.fromstring(z.read(name)).findall('.//a:t',ns))
-        assert len(slide_names)==8 and '201,3' in text and '43,2' in text
+        assert len(slide_names)==8 and 'ТРИ БОГАТЫРЯ' in text and '206 596,60' in text and '43,2' in text
         decks[p.name]=dict(slides=len(slide_names),charts=len([n for n in z.namelist() if re.fullmatch(r'ppt/charts/chart\d+\.xml',n)]))
 required=['README.md','demo/vanino-dashboard.html','materials/HYPOTHESIS.md','materials/REPORT.md','materials/ECONOMICS.md','materials/ROADMAP.md','materials/requirements/CHECKLIST.md','materials/requirements/A3_OFFICIAL_SNAPSHOT.txt','model/data/scenarios.json','model/src/economy.js','ai/README.md','ai/RESEARCH_LOG.md','model/results/scenarios.json','model/results/port_scenarios.json']
 assert all((R/p).exists() for p in required)
