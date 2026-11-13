@@ -40,10 +40,10 @@
     "seeds/workbook_economics.json": "87d4f22271ba5305e9ad8cc0aa70a96af80ce99d99fbd0af970113e33a617650",
     "tests/check_ui.cjs": "b4089cec6a5cb93f5992416aa5f3858cc83a6071552a84430e256eca356639e4",
     "web/index.html": "5cb9892837ddd3531c04dd1219efdc11dee244373cd5c8276a84139611218f35",
-    "web/jury.js": "424bc779245bbb0fc482b02c3e85ccbe5bfeaeb09a6180cb552109ee6199a31d",
+    "web/jury.js": "5710c48dece3247fabb58fd401d9c2e772b8134235c8142c6e5318c2320e196f",
     "web/sample-alternatives.csv": "aabb9661fecd3fca6c97361870c856881b3a4044a8e45f42b35ddb86e9c35fe2",
     "web/sample-snapshot.json": "9a62021c4bbb3d1999438923268098c88660a9ea07b2915278c8a70d947599f3",
-    "web/ui.css": "bf9c3bee80c0aef2bed4a4d737537b92e9749a0d3479be8eaeefb52e524c695d",
+    "web/ui.css": "327e66ca52fddeef37b61be35f472ae165418784c6b2a6f3bcedae739b0d5349",
     "test_operator_decisions.py": "4d4ec2378841eaecbef9dad09240d3940d186b6d26d9761e45f53020bb124d22"
   },
   "runtime_data_included": false,
