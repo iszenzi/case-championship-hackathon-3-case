@@ -1,0 +1,2 @@
+# Optional, only for documents with a PDF text layer.
+pypdf>=6.0,<7
