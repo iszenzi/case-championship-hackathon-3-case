@@ -56,6 +56,15 @@ vm.runInContext('S.b={scenario_runs:[saved,cleared]};S.calculations={}',ctx);
 assert.equal(vm.runInContext('fixedScenario(saved.row.id)',ctx),null);
 assert.ok(!vm.runInContext('scenarioCardView(saved.row)',ctx).includes('₽'));
 vm.runInContext('S.b={scenario_runs:[]}',ctx);
+ctx.aiRun=JSON.parse(JSON.stringify(runs[0]));
+ctx.aiRun.analysis.facts={summary:'SUMMARY_VISIBLE',preference_reason:'PREFERENCE_TO_REMOVE',options:[{id:'ALT-3',assessment:'THIRD_ASSESSMENT'},{id:'ALT-1',assessment:'FIRST_ASSESSMENT'},{id:'ALT-2',assessment:'SECOND_ASSESSMENT'}]};
+const openAnalysis=vm.runInContext('scenarioAiView(aiRun)',ctx);
+assert.ok(openAnalysis.includes('SUMMARY_VISIBLE'));
+assert.ok(!openAnalysis.includes('PREFERENCE_TO_REMOVE'));
+assert.ok(!openAnalysis.includes('<details'));
+for(let i=1;i<=3;i++)assert.ok(openAnalysis.includes('<h3>Вариант '+i+'</h3>'));
+assert.ok(openAnalysis.indexOf('FIRST_ASSESSMENT')<openAnalysis.indexOf('SECOND_ASSESSMENT'));
+assert.ok(openAnalysis.indexOf('SECOND_ASSESSMENT')<openAnalysis.indexOf('THIRD_ASSESSMENT'));
 (async()=>{
  ctx.run=runs[0];
  vm.runInContext("S.calculations={};S.view='scenarios';render=()=>{};boot=async()=>{};toast=()=>{};api=async(path)=>path.endsWith('/open')?({...run,analysis:null}):run",ctx);

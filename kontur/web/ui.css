@@ -229,3 +229,8 @@ button .icon{width:18px;height:18px;margin:0;flex:0 0 18px} [hidden]{display:non
 .operator-choice:has(input:checked){border-color:#297dcc;background:#f0f6fc}
 .operator-saved{width:100%;padding:16px;background:#f0f6fc;border:1px solid #b7cadc}
 .operator-saved p{margin-top:10px}
+
+.scenario-ai-options{list-style:none;margin:18px 0 0;padding:0}
+.scenario-ai-options li{padding:14px 0;border-top:1px solid var(--line)}
+.scenario-ai-options h3{font-size:15px;line-height:1.4;margin-bottom:7px}
+.scenario-ai-options p{font-size:13px;line-height:1.8;color:#4b5c6b}
