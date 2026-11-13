@@ -3,7 +3,7 @@
   "sha256": {
     ".env.example": "050e17ac825e07df47f81a45318fe8d4a438a785498c4d30b8ce2b17ab8e50d9",
     ".gitignore": "2208f04f4abc938d7304603037215d952d4868648ab2482a5745fa9111a1f52d",
-    "build_release.py": "a83603ed63ce74366ae1ae4e643f1c97eb8320afa132c876c69f84add65bab09",
+    "build_release.py": "83b9308be13df5ce71b71e72a28dd1fcc39db1e1c0dcd8b45c0140191112a6cd",
     "core.py": "799d2d820c2ec589e3462135648d134408aed0a062fa71310ba8b741a24bee4f",
     "court_lab.py": "8507729201bed05f0a9e501bfc08e931558715d0a7e7d7948a1e3e35cdcaaf34",
     "judicial.py": "afff08e6dbc0604042499e66d65acfe805718468613d4e78a1e923a9c53059fd",
@@ -11,10 +11,10 @@
     "llm.py": "71978edcac55fbb75b84b62a45c1bd9418e5e08d485fba596ef946ff877779b8",
     "MODEL_SELECTION.md": "b38d9536cc27fbec495cfd7ceec5eb16ee13b6108963223271b0d713d781041a",
     "planning.py": "728b00f6b80aadecc398af18c3228efde35757aa7139845481e1e907d473092d",
-    "README.md": "f64a72dca1ac7b4b0cc70812f079f842994062c4a47ac50235e53aa5ff9e247a",
+    "README.md": "e25c2be0c439d93ee3d57c0d63483f6d960f3b873e2b8c4084a188058efe7828",
     "requirements-pdf.txt": "eb5e8bd2ea6c4287da9b987240deeb3da58683f1d33fc43bed21843f7e688bff",
     "scenario_engine.py": "e04a3762d386fd7aab555deb903f2bd2c00f58597da5f8a0af48702e35bb6670",
-    "server.py": "a99a59c891759fc93cdb6f8de2a508ba199c1cc03c6999bb8372336296bb43f9",
+    "server.py": "e472aa746bf7f15db7f04f3d55505022f0184f932b015e3dd249313a9f3b5145",
     "start-vm.cmd": "b023110a3a711edcca9d5bb1f32f3ae3d32b52af3a5dbe994f34855fdcc8e32f",
     "start.cmd": "f2f8d996b68e622edc23bf1a5522b7ab9cebfb7d8b341ebc6338cdf24e843eea",
     "stop.cmd": "ac85b5585f1ed7681b7724fcadfc978c2d0ca92269ed7c9cb8be1deb60299db6",
@@ -38,12 +38,13 @@
     "seeds/scenarios.json": "6906f0a13260a17ac04aa88bf16a92abca8fd8228c1e40f87389cf9344bae302",
     "seeds/verified_cases.json": "9563390e6c387f7354c2521c19df2b03e01ddbc3af584923a70dfdc1c1edf003",
     "seeds/workbook_economics.json": "87d4f22271ba5305e9ad8cc0aa70a96af80ce99d99fbd0af970113e33a617650",
-    "tests/check_ui.cjs": "9be692d61ff39e81b7b3b9e4a7e9dd57ce5f91c3fac495cc700100a425dc227b",
+    "tests/check_ui.cjs": "fe6f0bcc11606462bb15a75687042ffedb7a8f8708018392f53a89e820e9739f",
     "web/index.html": "5cb9892837ddd3531c04dd1219efdc11dee244373cd5c8276a84139611218f35",
-    "web/jury.js": "0981016372a03c024fe3a99c334d7c9cf35127aaedda75380aa911a4d673f483",
+    "web/jury.js": "da99ad68484fb17b0d829c22ceff498a3ebd6a5ccdef44f886c348ecd1fea52f",
     "web/sample-alternatives.csv": "aabb9661fecd3fca6c97361870c856881b3a4044a8e45f42b35ddb86e9c35fe2",
     "web/sample-snapshot.json": "9a62021c4bbb3d1999438923268098c88660a9ea07b2915278c8a70d947599f3",
-    "web/ui.css": "b927efffc6db410833de79d8c82cc4f69ff2ce10a2cec38f170bd93ccca21733"
+    "web/ui.css": "d07d64128a76cf2684d17ced3f3cb23ca564908e802cc9ea64aa039d67eac0a5",
+    "test_operator_decisions.py": "08c972c49860b04465638f2a4e3049fcc2e6c17511a03744eb9c9c8a2adc27b8"
   },
   "runtime_data_included": false,
   "credentials_included": false

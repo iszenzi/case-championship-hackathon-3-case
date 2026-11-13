@@ -218,3 +218,14 @@ button .icon{width:18px;height:18px;margin:0;flex:0 0 18px} [hidden]{display:non
 .scenario-card .scenario-card-actions button{margin-top:0}
 
 .scenario-source h2{font-size:16px;line-height:1.4;margin-bottom:8px;letter-spacing:0}
+
+.operator-options{width:100%;border:0;padding:0;margin:0 0 16px;min-width:0}
+.operator-options legend{font-size:16px;font-weight:700;margin-bottom:12px}
+.operator-choice{display:flex;align-items:flex-start;gap:12px;padding:13px;border:1px solid var(--line);margin:9px 0;border-radius:3px;cursor:pointer}
+.operator-choice input{width:18px;min-height:18px;flex-shrink:0;margin-top:3px;accent-color:var(--red)}
+.operator-choice>span{min-width:0;display:flex;flex-direction:column;gap:5px;font-size:13px;overflow-wrap:anywhere}
+.operator-choice strong{font-size:14px}
+.operator-choice small{color:#805900}
+.operator-choice:has(input:checked){border-color:#297dcc;background:#f0f6fc}
+.operator-saved{width:100%;padding:16px;background:#f0f6fc;border:1px solid #b7cadc}
+.operator-saved p{margin-top:10px}

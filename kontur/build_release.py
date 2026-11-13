@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 
 def main():
     if '--skip-checks' not in sys.argv:
-        subprocess.run([sys.executable, '-X', 'utf8', '-m', 'unittest', '-v', 'test_app', 'test_court', 'test_judicial', 'test_scenario_engine'], cwd=ROOT, check=True)
+        subprocess.run([sys.executable, '-X', 'utf8', '-m', 'unittest', '-v', 'test_app', 'test_court', 'test_judicial', 'test_scenario_engine', 'test_operator_decisions'], cwd=ROOT, check=True)
         # Node is only a development check; the app itself has no Node dependency.
         subprocess.run(['node', '--check', str(ROOT/'web/jury.js')], cwd=ROOT, check=True)
     selected = [ROOT/name for name in ['.gitignore','.env.example','README.md','VALIDATION.md','MODEL_SELECTION.md','start.cmd','stop.cmd','start-vm.cmd','requirements-pdf.txt']]

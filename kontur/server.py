@@ -145,8 +145,18 @@ class App:
                     run.update(snapshot=result['snapshot'],result=result,revision=run['revision']+1)
                     return self.store.put('scenario_runs',run,'scenario_recalculated',{})
                 if not run['analysis']:raise ValueError('Сначала выполните разбор ИИ')
-                run.update(decision={'choice':run['result']['choice'],'text':run['result']['decision_text'],
-                    'effect_rub':run['result']['net_rzd_effect'],'reviewer':str(d.get('reviewer','Участник демонстрации'))[:100],
+                choice=d.get('choice')
+                selected=next((a for a in run['result']['alternatives'] if a['id']==choice),None)
+                if choice!='keep_plan' and selected is None:raise ValueError('Выберите решение оператора')
+                text='Перенаправить: '+selected['name'] if selected else 'Сохранить исходный маршрут'
+                run.update(decision={'choice':choice,'text':text,
+                    'effect_rub':selected['net_rzd_effect'] if selected else 0,
+                    'alternative_status':selected['status'] if selected else 'keep_plan',
+                    'additional_cost':selected['extra_cost'] if selected else 0,
+                    'avoided':selected['avoided'] if selected else 0,
+                    'recommended_choice':run['result']['choice'],
+                    'recommended_effect_rub':run['result']['net_rzd_effect'],
+                    'reviewer':str(d.get('reviewer','Участник демонстрации'))[:100],
                     'at':time.time(),'status':'accepted_in_scenario','actual_dispatch':False},revision=run['revision']+1)
                 return self.store.put('scenario_runs',run,'scenario_decision_accepted',run['decision'])
         if path == '/api/judicial/model':

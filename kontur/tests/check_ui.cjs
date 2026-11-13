@@ -28,6 +28,18 @@ for(const run of runs){
  assert.ok(vm.runInContext('scenarioCardView(run.row)',ctx).includes('₽'));
  assert.ok(vm.runInContext('scenarioReport(run)',ctx).includes('Денежный расчёт'));
 }
+// Operator choices and history must use the saved decision, not the AI recommendation.
+ctx.run=runs[0];ctx.run.id='operator-ui-test';
+vm.runInContext('S.scenario=run;S.operatorChoices={}',ctx);
+assert.ok(vm.runInContext('operatorDecisionView(run)',ctx).includes('disabled'));
+vm.runInContext("S.operatorChoices[run.id]='ALT-2'",ctx);
+assert.ok(vm.runInContext('operatorDecisionView(run)',ctx).includes('value="ALT-2" checked'));
+ctx.saved=JSON.parse(JSON.stringify(runs[0]));ctx.saved.decision={choice:'ALT-2',text:'OPERATOR_ALT2',effect_rub:-562000,at:123};
+vm.runInContext('S.b={scenario_runs:[run,saved]}',ctx);
+const history=vm.runInContext('scenarioHistoryView()',ctx);
+assert.ok(history.includes('OPERATOR_ALT2'));
+assert.equal((history.match(/data-action="scenario-run"/g)||[]).length,1);
+assert.ok(!history.includes('ИИ + расчёт'));
 (async()=>{
  ctx.run=runs[0];
  vm.runInContext("S.calculations={};S.view='scenarios';render=()=>{};boot=async()=>{};toast=()=>{};api=async(path)=>path.endsWith('/open')?({...run,analysis:null}):run",ctx);
