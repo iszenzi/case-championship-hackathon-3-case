@@ -188,3 +188,31 @@ button .icon{width:18px;height:18px;margin:0;flex:0 0 18px} [hidden]{display:non
 @media(max-width:700px){.scenario-intro,.scenario-result{grid-template-columns:1fr;gap:20px;padding:21px}.intro-example,.scenario-result-money{border-left:0;border-top:1px solid #597081;padding:18px 0 0}.scenario-search select{max-width:160px}.scenario-search input{width:100%;flex:auto}.scenario-intro h2{font-size:24px}.intro-example strong{font-size:35px}.annual-scenario{flex-direction:column;align-items:flex-start}.money-compare strong{font-size:20px}.scenario-result h2{font-size:24px}}
 .scenario-source{font-size:14px;line-height:1.8;color:#435567;border-left:3px solid #b8c5d0;padding:9px 16px;margin-top:15px;background:#f7f8fa}
 .scenario-decision{font-size:14px;margin:10px 0 16px}.tiny{font-size:13px}.eyebrow,.identity small{display:none}.scenario-card .chip-row .pill{font-size:13px}.scenario-result-money span{font-size:15px}.scenario-money span{font-size:14px}
+
+.scenario-routes .panel-head .sub{margin-top:9px}
+.scenario-routes .condition-options{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));align-items:stretch}
+.scenario-routes .route-option{display:flex;flex-direction:column;min-width:0;margin:0;padding:18px}
+.route-option h3{font-size:20px;line-height:1.3;overflow-wrap:anywhere}
+.route-option .route-number{font-size:12px;color:var(--muted);margin-bottom:5px}
+.route-option .chip-row{margin:12px 0}
+.route-option .route-condition,.route-option .route-assessment p{font-size:13px;line-height:1.75}
+.route-assessment{border-top:1px solid var(--line);margin-top:16px;padding-top:13px}
+.route-option .route-assessment strong{font-size:12px;margin-bottom:5px}
+.route-money{margin:auto 0 0;padding-top:18px;font-size:12px;font-variant-numeric:tabular-nums}
+.route-money>div{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding:10px 0}
+.route-money dt{color:var(--muted)}
+.route-money dd{margin:0;white-space:nowrap;font-weight:750;text-align:right}
+@media(max-width:700px){.scenario-routes .condition-options{grid-template-columns:1fr}}
+
+/* Header artwork and treatment from the team's approved dashboard. */
+.top .rzd-logo{flex-shrink:0}
+.top .partners{flex-shrink:0}
+@media(max-width:900px){
+ .top{flex-wrap:wrap;gap:8px;padding-top:12px}
+ .top .partners{order:2;margin-left:auto}
+ .top nav{order:3;width:100%;min-height:47px;margin-left:0;justify-content:space-between;gap:12px}
+ .top .partners img{width:clamp(125px,41vw,175px)}
+}
+@media(max-width:700px){.top .identity>div{display:none}}
+.scenario-card-actions{display:flex;flex-direction:column;gap:9px;margin-top:20px}
+.scenario-card .scenario-card-actions button{margin-top:0}

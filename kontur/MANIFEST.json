@@ -39,10 +39,10 @@
     "seeds/verified_cases.json": "9563390e6c387f7354c2521c19df2b03e01ddbc3af584923a70dfdc1c1edf003",
     "seeds/workbook_economics.json": "87d4f22271ba5305e9ad8cc0aa70a96af80ce99d99fbd0af970113e33a617650",
     "web/index.html": "5cb9892837ddd3531c04dd1219efdc11dee244373cd5c8276a84139611218f35",
-    "web/jury.js": "a3a47cf6ab0f645b2ece1e1a2ec2f37e78e736caa90ad91c59b04cb6432c6594",
+    "web/jury.js": "c2f618894aadfa293d39017e1b89b364f9fcff83b31e53680ed22008daf9792b",
     "web/sample-alternatives.csv": "aabb9661fecd3fca6c97361870c856881b3a4044a8e45f42b35ddb86e9c35fe2",
     "web/sample-snapshot.json": "9a62021c4bbb3d1999438923268098c88660a9ea07b2915278c8a70d947599f3",
-    "web/ui.css": "2b46fd75140b51d38e188a476aa6b38a20c393c74596d94532bda0a4c826fb10"
+    "web/ui.css": "e19b31ebe3dfc623f414e5542584ffeeace7ff789eac9a887cfd34ba5dc45a71"
   },
   "runtime_data_included": false,
   "credentials_included": false
