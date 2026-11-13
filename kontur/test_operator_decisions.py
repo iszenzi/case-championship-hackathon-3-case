@@ -37,4 +37,19 @@ class OperatorDecisionTests(unittest.TestCase):
   self.accept('ALT-2')
   with self.assertRaises(ValueError):self.accept('ALT-3')
 
+ def test_reset_removes_only_confirmation_and_keeps_audit(self):
+  self.analyzed();saved=self.accept('ALT-3')
+  cleared=self.app.dispatch('POST','/api/scenario/reset',{'id':saved['id'],'revision':saved['revision']},{})
+  self.assertIsNone(cleared['decision'])
+  self.assertGreater(cleared['operator_reset_at'],saved['decision']['at'])
+  self.assertEqual(cleared['result'],saved['result'])
+  reopened=App(Path(self.tmp.name)).store.get('scenario_runs',saved['id'])
+  self.assertIsNone(reopened['decision'])
+  self.assertTrue(any(e['action']=='scenario_decision_reset' for e in self.app.store.events(saved['id'])))
+  with self.assertRaises(ValueError):self.app.dispatch('POST','/api/scenario/reset',{'id':saved['id'],'revision':cleared['revision']},{})
+ def test_reset_rejects_stale_revision(self):
+  self.analyzed();saved=self.accept('ALT-1')
+  with self.assertRaises(ValueError):self.app.dispatch('POST','/api/scenario/reset',{'id':saved['id'],'revision':self.run['revision']},{})
+  self.assertIsNotNone(self.app.store.get('scenario_runs',saved['id'])['decision'])
+
 if __name__=='__main__':unittest.main()

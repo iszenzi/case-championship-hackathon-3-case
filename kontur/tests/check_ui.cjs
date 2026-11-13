@@ -40,6 +40,22 @@ const history=vm.runInContext('scenarioHistoryView()',ctx);
 assert.ok(history.includes('OPERATOR_ALT2'));
 assert.equal((history.match(/data-action="scenario-run"/g)||[]).length,1);
 assert.ok(!history.includes('ИИ + расчёт'));
+// Saved operator choice overrides the recommendation and survives a fresh client state.
+ctx.saved.id='fixed-test';ctx.saved.analysis=runs[0].analysis;
+vm.runInContext('S.b={scenario_runs:[saved]};S.calculations={};S.scenario=saved',ctx);
+const fixedPage=vm.runInContext('scenarioView()',ctx);
+assert.ok(fixedPage.includes('✓ Зафиксированное решение'));
+assert.ok(!fixedPage.includes('✓ Рекомендуемое решение'));
+assert.ok(!fixedPage.includes('✓ Рекомендуется'));
+assert.ok(!fixedPage.includes('>Выбор ИИ<'));
+assert.equal(vm.runInContext('displayedResult(saved).net_rzd_effect',ctx),-562000);
+assert.equal(vm.runInContext('displayedResult(saved).additional_cost',ctx),ctx.saved.result.alternatives[1].extra_cost);
+assert.ok(vm.runInContext('scenarioCardView(saved.row)',ctx).includes('OPERATOR_ALT2'));
+ctx.cleared={...ctx.saved,id:'cleared-test',decision:null,operator_reset_at:124};
+vm.runInContext('S.b={scenario_runs:[saved,cleared]};S.calculations={}',ctx);
+assert.equal(vm.runInContext('fixedScenario(saved.row.id)',ctx),null);
+assert.ok(!vm.runInContext('scenarioCardView(saved.row)',ctx).includes('₽'));
+vm.runInContext('S.b={scenario_runs:[]}',ctx);
 (async()=>{
  ctx.run=runs[0];
  vm.runInContext("S.calculations={};S.view='scenarios';render=()=>{};boot=async()=>{};toast=()=>{};api=async(path)=>path.endsWith('/open')?({...run,analysis:null}):run",ctx);

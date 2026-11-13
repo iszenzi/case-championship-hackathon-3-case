@@ -116,10 +116,10 @@ class App:
             run=dict(id=uid('SCN'),row=deepcopy(row),snapshot=s,filled_fields=filled,created_at=time.time(),revision=1,
                      analysis=None,decision=None,result=scenario_engine.calculate(row,s))
             return self.store.put('scenario_runs',run,'scenario_opened',{'scenario_id':row['id']})
-        if path in ('/api/scenario/analyze','/api/scenario/recalculate','/api/scenario/accept'):
+        if path in ('/api/scenario/analyze','/api/scenario/recalculate','/api/scenario/accept','/api/scenario/reset'):
             run=self.store.get('scenario_runs',d.get('id',''))
             if d.get('revision')!=run['revision']:raise ValueError('Расчёт обновился. Откройте запись заново.')
-            if run['decision']:raise ValueError('Решение уже сохранено. Для нового расчёта откройте сценарий заново.')
+            if run['decision'] and path!='/api/scenario/reset':raise ValueError('Решение уже сохранено. Для нового расчёта откройте сценарий заново.')
             row=run['row']
             if path=='/api/scenario/analyze':
                 units={'CONDITION':row['condition'],'PERIOD':row['period'],**{a['id']:a['text'] for a in row['alternatives']}}
@@ -138,6 +138,11 @@ class App:
             with self.lock:
                 current=self.store.get('scenario_runs',run['id'])
                 if current['revision']!=d['revision']:raise ValueError('Сценарий изменился')
+                if path=='/api/scenario/reset':
+                    if not run['decision']:raise ValueError('Решение уже очищено')
+                    previous=deepcopy(run['decision'])
+                    run.update(decision=None,operator_reset_at=time.time(),revision=run['revision']+1)
+                    return self.store.put('scenario_runs',run,'scenario_decision_reset',{'previous_decision':previous})
                 if path=='/api/scenario/recalculate':
                     snapshot=d.get('snapshot',run['snapshot'])
                     snapshot['cash_realization']=1
