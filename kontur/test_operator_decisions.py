@@ -52,4 +52,26 @@ class OperatorDecisionTests(unittest.TestCase):
   with self.assertRaises(ValueError):self.app.dispatch('POST','/api/scenario/reset',{'id':saved['id'],'revision':self.run['revision']},{})
   self.assertIsNotNone(self.app.store.get('scenario_runs',saved['id'])['decision'])
 
+ def test_clear_all_is_atomic_and_keeps_unconfirmed_calculations(self):
+  self.analyzed();one=self.accept('ALT-2')
+  self.run=self.app.dispatch('POST','/api/scenario/open',{'scenario_id':'COURT-02'},{});self.analyzed();two=self.accept('ALT-3')
+  pending=self.app.dispatch('POST','/api/scenario/open',{'scenario_id':'COURT-03'},{})
+  targets=[{'id':r['id'],'revision':r['revision']} for r in [one,two]]
+  stale=deepcopy(targets);stale[1]['revision']-=1
+  with self.assertRaises(ValueError):self.app.dispatch('POST','/api/scenario/reset-all',{'decisions':stale},{})
+  for r in [one,two]:self.assertIsNotNone(self.app.store.get('scenario_runs',r['id'])['decision'])
+  result=self.app.dispatch('POST','/api/scenario/reset-all',{'decisions':targets},{})
+  self.assertEqual(result['cleared'],2)
+  for r in [one,two]:
+   saved=self.app.store.get('scenario_runs',r['id']);self.assertIsNone(saved['decision']);self.assertIn('operator_reset_at',saved)
+   self.assertEqual(saved['result'],r['result'])
+   self.assertEqual(self.app.store.events(r['id'])[-1]['action'],'scenario_decisions_reset_all')
+  self.assertEqual(self.app.store.get('scenario_runs',pending['id']),pending)
+  self.assertEqual(self.app.dispatch('POST','/api/scenario/reset-all',{'decisions':[]},{})['cleared'],0)
+ def test_clear_all_rejects_new_or_duplicate_records(self):
+  self.analyzed();one=self.accept('ALT-1');target={'id':one['id'],'revision':one['revision']}
+  for targets in [[],[target,target],[{'id':one['id'],'revision':True}]]:
+   with self.subTest(targets=targets),self.assertRaises(ValueError):self.app.dispatch('POST','/api/scenario/reset-all',{'decisions':targets},{})
+  self.assertIsNotNone(self.app.store.get('scenario_runs',one['id'])['decision'])
+
 if __name__=='__main__':unittest.main()

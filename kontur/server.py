@@ -109,6 +109,23 @@ class App:
             if path == "/api/pilot":
                 return self.pilot_summary()
             raise KeyError("API не найден")
+        if path == '/api/scenario/reset-all':
+            targets=d.get('decisions')
+            if not isinstance(targets,list) or any(not isinstance(x,dict) or not isinstance(x.get('id'),str) or type(x.get('revision')) is not int for x in targets):raise ValueError('Передайте список решений с версиями')
+            expected={x['id']:x['revision'] for x in targets}
+            if len(expected)!=len(targets):raise ValueError('Повтор решения в списке')
+            with self.lock,self.store.connect() as db:
+                db.execute('BEGIN IMMEDIATE')
+                rows=[json.loads(x[0]) for x in db.execute('SELECT payload FROM scenario_runs')]
+                fixed=[r for r in rows if r.get('decision') and r.get('result',{}).get('model_version')==scenario_engine.VERSION]
+                if {r['id']:r['revision'] for r in fixed}!=expected:raise ValueError('Список решений изменился. Обновите страницу.')
+                reset_at=time.time()
+                for run in fixed:
+                    previous=deepcopy(run['decision'])
+                    run.update(decision=None,operator_reset_at=reset_at,revision=run['revision']+1)
+                    db.execute('UPDATE scenario_runs SET payload=? WHERE id=?',(json.dumps(run,ensure_ascii=False),run['id']))
+                    db.execute('INSERT INTO events(case_id,at,action,payload) VALUES(?,?,?,?)',(run['id'],reset_at,'scenario_decisions_reset_all',json.dumps({'previous_decision':previous},ensure_ascii=False)))
+                return {'cleared':len(fixed)}
         if path == '/api/scenario/open':
             row=next((r for r in self.court_catalog if r['id']==d.get('scenario_id')),None)
             if row is None:raise ValueError('Выберите сценарий')

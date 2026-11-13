@@ -75,4 +75,28 @@ assert.ok(openAnalysis.indexOf('SECOND_ASSESSMENT')<openAnalysis.indexOf('THIRD_
  vm.runInContext("S.calculations={};api=async()=>{throw Error('API unavailable')}",ctx);
  await assert.rejects(vm.runInContext('calculateScenario(run)',ctx));assert.equal(vm.runInContext('Object.keys(S.calculations).length',ctx),0);
  console.log(`PASS: ${runs.length} scenarios, ${count} alternatives: hidden before calculation, results/selection after, external button stays in catalog, details reuse results, errors do not reveal sums.`);
+// Export by record ID must ignore whichever scenario is currently open.
+ctx.exports={};
+for(const choice of ['ALT-1','ALT-2','ALT-3','keep_plan']){
+ const record=JSON.parse(JSON.stringify(runs[0])),selected=record.result.alternatives.find(a=>a.id===choice);
+ record.id='export-'+choice;record.decision={choice,text:selected?selected.name:'Сохранить исходный маршрут',effect_rub:selected?.net_rzd_effect||0,at:123};
+ ctx.exports[record.id]=record;
+}
+vm.runInContext("api=async(path)=>exports[decodeURIComponent(path.split('id=')[1])];download=(body,name,type)=>{captured={body,name,type}}",ctx);
+const originalScenario=vm.runInContext('S.scenario',ctx);
+for(const record of Object.values(ctx.exports)){
+ ctx.exportId=record.id;ctx.captured=null;
+ await vm.runInContext("actions['scenario-download']({dataset:{id:exportId}})",ctx);
+ assert.ok(ctx.captured.name.includes(record.id));assert.ok(ctx.captured.body.includes('Расчёт: '+record.id));
+ const raw=ctx.captured.body.match(/<summary>Полный протокол расчёта<\/summary><pre>([\s\S]*?)<\/pre>/)[1];
+ const entities={'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'"};
+ const protocol=JSON.parse(raw.replace(/&(amp|lt|gt|quot|#39);/g,m=>entities[m]));
+ assert.equal(protocol.id,record.id);assert.equal(protocol.result.choice,record.decision.choice);
+ assert.equal(protocol.result.net_rzd_effect,record.decision.effect_rub);
+ assert.equal(protocol.result.additional_cost,record.result.alternatives.find(a=>a.id===record.decision.choice)?.extra_cost||0);
+ assert.equal(vm.runInContext('S.scenario',ctx),originalScenario);
+}
+ctx.exports.cleared={...ctx.exports['export-ALT-1'],decision:null};ctx.captured=null;
+await assert.rejects(vm.runInContext("exportScenarioById('cleared',true)",ctx));assert.equal(ctx.captured,null);
+console.log('PASS: exported HTML matches all three selected alternatives and keep-plan; cleared records cannot be exported from history.');
 })().catch(e=>{console.error(e);process.exitCode=1});
