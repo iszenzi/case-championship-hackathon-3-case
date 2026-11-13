@@ -4,3 +4,14 @@ __pycache__/
 .pytest_cache/
 *.pyc
 qa/
+
+.env.*
+!.env.example
+*.sqlite*
+*.db
+*.log
+access/
+runtime/
+backups/
+snapshots/
+dist/

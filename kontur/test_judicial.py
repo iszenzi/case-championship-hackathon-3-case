@@ -170,7 +170,7 @@ class JudicialAPITests(unittest.TestCase):
         self.assertEqual(len(b['judicial_cases']),5)
         self.assertEqual(b['judicial_summary']['reference_matches'],0)
         self.assertTrue(b['model_locked'])
-        self.assertEqual(self.app.dispatch('GET','/api/health',{}, {})['version'],'3.1.1')
+        self.assertEqual(self.app.dispatch('GET','/api/health',{}, {})['version'],'4.1.0')
 
 
 if __name__=='__main__':unittest.main()

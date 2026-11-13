@@ -26,3 +26,21 @@ jobs:
         run: python3 model/scripts/check_repository.py
       - name: Убедиться в воспроизводимости опубликованных файлов
         run: git diff --exit-code -- demo/vanino-dashboard.html model/results/
+
+  kontur:
+    name: Проверка демо сценариев
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Проверить сервер и экономику Excel
+        working-directory: kontur
+        run: python3 -m unittest -q test_app test_court test_judicial test_scenario_engine
+      - name: Проверить интерфейс до и после расчёта
+        env:
+          PYTHON: python3
+        run: |
+          node --check kontur/web/jury.js
+          node kontur/tests/check_ui.cjs
+      - name: Проверить поставку без ключей и рабочих данных
+        working-directory: kontur
+        run: python3 build_release.py --skip-checks

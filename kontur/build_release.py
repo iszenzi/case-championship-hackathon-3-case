@@ -11,18 +11,18 @@ ROOT = Path(__file__).resolve().parent
 
 def main():
     if '--skip-checks' not in sys.argv:
-        subprocess.run([sys.executable, '-X', 'utf8', '-m', 'unittest', '-v', 'test_app', 'test_court', 'test_judicial'], cwd=ROOT, check=True)
+        subprocess.run([sys.executable, '-X', 'utf8', '-m', 'unittest', '-v', 'test_app', 'test_court', 'test_judicial', 'test_scenario_engine'], cwd=ROOT, check=True)
         # Node is only a development check; the app itself has no Node dependency.
         subprocess.run(['node', '--check', str(ROOT/'web/jury.js')], cwd=ROOT, check=True)
     selected = [ROOT/name for name in ['.gitignore','.env.example','README.md','VALIDATION.md','MODEL_SELECTION.md','start.cmd','stop.cmd','start-vm.cmd','requirements-pdf.txt']]
     selected += sorted(ROOT.glob('*.py'))
-    selected += sorted(p for folder in ['web','seeds','certs','deploy'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
+    selected += sorted(p for folder in ['web','seeds','certs','deploy','tests'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
     selected = [p for p in selected if p not in (ROOT/'web/app.js', ROOT/'web/style.css', ROOT/'web/ui.js')]
     for file in selected:
         if file.name in ('.env','.env.tmp') or any(x in ('data','qa','__pycache__') for x in file.relative_to(ROOT).parts):
             raise RuntimeError('Runtime file in source distribution')
     manifest = {str(p.relative_to(ROOT)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in selected}
-    out=ROOT.parent.parent/'output';out.mkdir(exist_ok=True)
+    out=ROOT/'dist';out.mkdir(exist_ok=True)
     dest=out/'Kontur_DILS_Copilot_2026-11-13.zip'
     with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
         for p in selected:z.write(p,'Kontur/'+str(p.relative_to(ROOT)).replace('\\','/'))

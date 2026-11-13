@@ -5,10 +5,10 @@ import json,re,hashlib,zipfile,xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[2]
 missing=[];secrets=[];forbidden=[]
 secret_patterns=[r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',r'gh[pousr]_[A-Za-z0-9]{30,}',r'github_pat_[A-Za-z0-9_]{30,}',r'AIza[0-9A-Za-z_-]{30,}',r'sk-(?:proj-)?[A-Za-z0-9_-]{35,}']
-ignored={'.git','__pycache__','local','node_modules','.venv','venv'}
+ignored={'.git','__pycache__','local','node_modules','.venv','venv','dist'}
 files=sorted(p for p in R.rglob('*') if p.is_file() and not ignored.intersection(p.relative_to(R).parts))
 for p in files:
-    if any(x in p.name.lower() for x in ['passport','паспорт']) or p.name.startswith('.env'):forbidden.append(str(p.relative_to(R)))
+    if any(x in p.name.lower() for x in ['passport','паспорт']) or (p.name.startswith('.env') and p.relative_to(R).as_posix()!='kontur/.env.example'):forbidden.append(str(p.relative_to(R)))
     if p.suffix.lower() not in ['.md','.txt','.py','.js','.cjs','.json','.html','.yml','.yaml','.csv']:continue
     try:
         text=p.read_text(encoding='utf-8-sig')

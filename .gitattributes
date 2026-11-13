@@ -16,3 +16,6 @@
 materials/sources/** -text
 materials/sources/README.md text eol=lf
 
+
+# Reproducible source-release hashes across Windows and Linux.
+kontur/** text eol=lf
